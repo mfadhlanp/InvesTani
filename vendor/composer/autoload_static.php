@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitf14663e6188ec280fe6b42f439dbf07f
+class ComposerStaticInitb977425e0df215f85e1250baa30655c7
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -14,8 +14,8 @@ class ComposerStaticInitf14663e6188ec280fe6b42f439dbf07f
         '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
-        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
+        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -117,8 +117,8 @@ class ComposerStaticInitf14663e6188ec280fe6b42f439dbf07f
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
-            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
-            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
         ),
         'XdgBaseDir\\' => 
         array (
@@ -329,11 +329,12 @@ class ComposerStaticInitf14663e6188ec280fe6b42f439dbf07f
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\adminLoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/adminLoginController.php',
+        'App\\Http\\Controllers\\CartController' => __DIR__ . '/../..' . '/app/Http/Controllers/CartController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Controllers\\adminController' => __DIR__ . '/../..' . '/app/Http/Controllers/adminController.php',
         'App\\Http\\Controllers\\categoriesController' => __DIR__ . '/../..' . '/app/Http/Controllers/categoriesController.php',
-        'App\\Http\\Controllers\\investasiController' => __DIR__ . '/../..' . '/app/Http/Controllers/investasiController.php',
+        'App\\Http\\Controllers\\investasiController' => __DIR__ . '/../..' . '/app/Http/Controllers/investasiController-a.php',
         'App\\Http\\Controllers\\proyekController' => __DIR__ . '/../..' . '/app/Http/Controllers/proyekController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -341,12 +342,15 @@ class ComposerStaticInitf14663e6188ec280fe6b42f439dbf07f
         'App\\Http\\Middleware\\TrimStrings' => __DIR__ . '/../..' . '/app/Http/Middleware/TrimStrings.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\InvestRepo' => __DIR__ . '/../..' . '/app/InvestRepo.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
         'App\\Providers\\EventServiceProvider' => __DIR__ . '/../..' . '/app/Providers/EventServiceProvider.php',
         'App\\Providers\\RouteServiceProvider' => __DIR__ . '/../..' . '/app/Providers/RouteServiceProvider.php',
+        'App\\ProyekRepo' => __DIR__ . '/../..' . '/app/ProyekRepo.php',
         'App\\User' => __DIR__ . '/../..' . '/app/User.php',
+        'App\\UserRepository' => __DIR__ . '/../..' . '/app/InvestRepo.php',
         'App\\admin' => __DIR__ . '/../..' . '/app/admin.php',
         'App\\category' => __DIR__ . '/../..' . '/app/category.php',
         'App\\investasi' => __DIR__ . '/../..' . '/app/investasi.php',
@@ -3673,10 +3677,10 @@ class ComposerStaticInitf14663e6188ec280fe6b42f439dbf07f
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitf14663e6188ec280fe6b42f439dbf07f::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitf14663e6188ec280fe6b42f439dbf07f::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitf14663e6188ec280fe6b42f439dbf07f::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitf14663e6188ec280fe6b42f439dbf07f::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitb977425e0df215f85e1250baa30655c7::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitb977425e0df215f85e1250baa30655c7::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitb977425e0df215f85e1250baa30655c7::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitb977425e0df215f85e1250baa30655c7::$classMap;
 
         }, null, ClassLoader::class);
     }
